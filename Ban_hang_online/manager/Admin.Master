@@ -1,0 +1,50 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="Ban_hang_online.manager.Admin" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+        }
+        .auto-style2 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <form id="form1" runat="server">
+        <div>
+            <table class="auto-style1">
+                <tr>
+                    <td class="auto-style2" style="background-color: #0066CC">
+                        <br />
+                        TRANG QUẢN TRỊ<br />
+                        <br />
+                        <asp:HyperLink ID="hpl_NguoiDung" runat="server" NavigateUrl="~/manager/QLND.aspx">Quản lý người dùng</asp:HyperLink>
+&nbsp;|
+                        <asp:HyperLink ID="hpl_MatHang" runat="server" NavigateUrl="~/manager/QLMH.aspx">Quản lý mặt hàng</asp:HyperLink>
+&nbsp;|
+                        <asp:HyperLink ID="hpl_DonHang" runat="server">Quản lý đơn hàng</asp:HyperLink>
+                        <br />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                </tr>
+            </table>
+        </div>
+    </form>
+</body>
+</html>
